@@ -5,7 +5,9 @@
  * Maked under MIT License
  * It's source code of Grub.js.
  */
-
+/*
+ * GitHub: https://github.com/TwinTreesSoftware/GrubJs
+ */
 (function() {
 	// Construct grub
 	var Grub = function(elem) {

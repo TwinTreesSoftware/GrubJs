@@ -1,7 +1,7 @@
 /**
  * Grub.js - Javascript library created for make work with HTML DOM simpless.
  * Copyright 2016. Semen Beliy.
- * v.16.02
+ * v.16.03
  * Maked under MIT License
  * It's source code of Grub.js.
  */
@@ -18,7 +18,7 @@
 	Grub.inf = {
 		desc: "Grub.js - Javascript library created for make work with HTML DOM simpless.",
 		copyright: "Copyright 2016. Semen Beliy",
-		ver: "16.01"
+		ver: "16.03"
 	};
 	
 	// Functions
@@ -36,6 +36,27 @@
 		// GetNodeName
 		getNodeName: function(){
 			return this[0].nodeName.toUpperCase();
+		},
+		
+		// onclick - not using with uselessness
+		/* onclick: function(functions){
+			return this[0].onclick = functions;
+		}, */
+		
+		// addEvent
+		addEvent: function(functions,evente){
+			this[0].addEventListener(evente, functions);
+		},
+		
+		// delEvent
+		delEvent: function(functions,evente){
+			this[0].removeEventListener(evente, functions);
+		},
+		
+		// makeEvent
+		makeEvent: function(evente,flags){
+			var event = new Event(evente, flags);
+			this[0].dispatchEvent(event);
 		},
 		
 		// Function to change or get html content of element
@@ -90,8 +111,6 @@
 	// Prototype as foo(functions list)
 	Grub.foo.init.prototype = Grub.foo;
 	
-	// Grub.foo == select(selector)
+	// Grub.select == select(selector)
 	window.Grub = window.select = Grub;
 })(); // It's means: by creation - execute
-
-// By Semen Beliy. 

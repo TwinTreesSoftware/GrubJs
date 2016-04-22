@@ -14,6 +14,6 @@ In Grub.js at this moment: 10 methods, it is:
 .attr(attr,value) - Set or get attribute of selected element  
 .removeAttr(attr) - Removing attribute of selected element  
 .isHasAttr(attr) - Returning true if selected element has typed attribute  
-makeEvent(event,flags) - make some event
-addEvent(function, event) - add some event to element
-delEvent(function, event) - remove some event to element
+makeEvent(event,flags) - make some event  
+addEvent(function, event) - add some event to element  
+delEvent(function, event) - remove some event to element  

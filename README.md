@@ -1,6 +1,5 @@
 # GrubJs
 Grub.js - Javascript library(like as jQuery) created for make work with HTML DOM simpless.
-In this repository, Grub.js - not compressed version of Grub.js, and Grub.min.js - compressed version.
 
 # How to use
 Grub.js work like as jQuery: select(selector).method(args);

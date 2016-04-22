@@ -30,7 +30,7 @@ In Grub.js at this moment: 10 methods, it is:
 
 Other examples:  
 
-1. Example with function html() 
+1 Example with function html() 
 ```html
 <script src="https://raw.githubusercontent.com/TwinTreesSoftware/GrubJs/master/Grub.js"></script>
 <div id="text">Text</div>
@@ -38,7 +38,7 @@ Other examples:
 select("text").html("Text");
 </script>
 ```  
-2. Example with function makeEvent()
+2 Example with function makeEvent()
 ```html
 <script src="https://raw.githubusercontent.com/TwinTreesSoftware/GrubJs/master/Grub.js"></script>
 <button id="b" onclick="alert('hello!')">Autoclick button</button>
@@ -46,7 +46,7 @@ select("text").html("Text");
 select("b").makeEvent("click");
 </script>
 ```  
-3. Example with function attr()
+3 Example with function attr()
 ```html
 <script src="https://raw.githubusercontent.com/TwinTreesSoftware/GrubJs/master/Grub.js"></script>
 <div onmouseenter="select(this).attr('color','blue')" onmouseleave="select(this).attr('color','white')" id="text">Text</div>
